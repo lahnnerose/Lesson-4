@@ -1,0 +1,82 @@
+/* Two divs with different IDs */
+/* Static Positioning */
+#section-1 {
+    background-color: palevioletred;
+    position: static;
+}
+
+/* An image with background styling in CSS */
+#section-2 {
+    background: lightblue url(./images/BG\ check.png) repeat;
+    background-size: 100px;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+/* Relative Positioning */
+#section-3 {
+    background: bisque url(./images/BG\ check.png) repeat;
+    background-size: 100px;
+    position: relative;
+    left: 20px;
+}
+
+/* Absolute positioning */
+#heartImage {
+    background-image: url(images/heart.ico);
+    height: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12px;
+    left: 290px;
+    transform: rotate(30deg);
+}
+
+
+/* Fixed positioning */
+#chameleonFriend img {
+    max-width: 10%;
+    max-height: 10%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#chameleonFriend img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1) rotate(350deg);
+}
+
+
+
+/* A class attribute (e.g. on a word or section) used at least twice */
+/* Styling in CSS for your class attribute */
+.special-paragraph {
+    color: blueviolet;
+
+}
+
+/* Optional: add a span to a letter, word, or phrase and style it in CSS */
+span#DivsHeader {
+    color: paleturquoise;
+}
+
+span#SpanHeader {
+    color: palevioletred;
+}
+
+/* Descendant Selector - all paragraphs within a div */
+div p {
+    color: hotpink;
+}
+
+/* Child Selector */
+div p>sub {
+    color: red;
+}
+
+/* Multiple Selector */
+#section-3 .special-paragraph {
+    color: darkorange;
+}
